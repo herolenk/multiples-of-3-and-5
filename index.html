@@ -4,12 +4,46 @@
         <meta charset="utf-8">
         <title>Problem 1</title>
         <link href="main.css" rel="stylesheet" type="text/css">
-        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
         
-    
-        <script src="code.js"></script>
+        <header class="site-header jumbotron">
+            <div class="container text-center"><h1 class="page-header">Problems</h1></div>
+        </header>
+        <div class="container">
+        
+            <h2><a href="https://projecteuler.net/problem=1">Problem 1</a></h2>
+        <p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Find the sum of all the multiples of 3 or 5 below 1000.</p>
+            <h3>Solution</h3>
+            
+            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">function</span> multiples3and5(max) {
+    <span style="color: #008800; font-weight: bold">var</span> sum<span style="color: #333333">=</span><span style="color: #0000DD; font-weight: bold">0</span>;
+    <span style="color: #008800; font-weight: bold">var</span> total <span style="color: #333333">=</span> [];
+    <span style="color: #008800; font-weight: bold">for</span> (<span style="color: #008800; font-weight: bold">var</span> x <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span>; x <span style="color: #333333">&lt;</span> max; x<span style="color: #333333">++</span>) {
+        <span style="color: #008800; font-weight: bold">if</span> (x <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">3</span> <span style="color: #333333">===</span><span style="color: #0000DD; font-weight: bold">0</span> <span style="color: #333333">||</span> x <span style="color: #333333">%</span> <span style="color: #0000DD; font-weight: bold">5</span> <span style="color: #333333">===</span><span style="color: #0000DD; font-weight: bold">0</span> ) {
+            total.push(x);
+            sum <span style="color: #333333">+=</span> total[total.length <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">1</span>];          
+        }
+
+    }
+    <span style="color: #008800; font-weight: bold">return</span> sum;
+
+
+}
+</pre></div>
+            <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">multiples3and5(<span style="color: #0000DD; font-weight: bold">1000</span>)
+<span style="color: #333333">&gt;&gt;</span> <span style="color: #0000DD; font-weight: bold">233168</span>
+</pre></div>
+
+
+            <button type="button" class="btn btn-primary seebtn"><a href="#" class="ds_1">See on Github</a></button>
+            
+        </div>
+        
+        <script src="problem1.js"></script>
     </body>
 
 </html>
