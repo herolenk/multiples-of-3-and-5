@@ -1,6 +1,6 @@
 
 ### Project Overview
-- [See Project on github page](https://herolenk.github.io/problems/)
+- [See Project on github page](https://katipoglumustafa.github.io/problems/)
 - [See Project on my webpage](https://www.ritrik.com/problems/)
 
 ### Details
